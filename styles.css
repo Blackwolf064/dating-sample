@@ -1,22 +1,17 @@
-
-
-    /* Global reset and styles */
+/* Global reset and styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 500px;
 }
 
 body {
-    /* max-width: 500px; */
     margin: 0;
-    background-image: url('images/2hearts.webp'); /* Replace with your image path */
+    background-image: url('images/2hearts.webp'); /* Main background image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* position: absolute; */
 }
 
 .header-container {
@@ -28,14 +23,11 @@ body {
     position: relative;
 }
 
-/* Header content for logo and text */
 .header-content {
     display: flex;
     align-items: center;
     height: 60px;
-    margin: auto;
     margin-left: 20px;
-    
 }
 
 .logo {
@@ -53,15 +45,13 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* Hamburger menu styles */
 .hamburger-menu {
-    display: none; 
+    display: none;
     font-size: 30px;
     cursor: pointer;
     margin-left: auto;
 }
 
-/* Hidden checkbox */
 .menu-toggle {
     display: none;
 }
@@ -77,22 +67,19 @@ body {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 50px; 
+        top: 50px;
         right: 10px;
         background-color: transparent;
         padding: 10px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         gap: 20px;
-        /* z-index: 1; */
     }
-    
 
     .menu-toggle:checked + .hamburger-menu + .header-links {
-        display: flex; /* Show links when checked */
+        display: flex;
     }
 }
 
-/* Styling for navigation links */
 ul {
     list-style-type: none;
     display: flex;
@@ -105,7 +92,6 @@ ul a {
     font-size: 0.90rem;
 }
 
-/* Additional styles */
 .motto {
     width: 100%;
     display: flex;
@@ -113,83 +99,64 @@ ul a {
     border-top: 1px dotted rgb(181, 23, 23);
     height: 230px;
     background: linear-gradient(45deg, #000000, #000000);
-
 }
+
 .motto-item {
     display: flex;
     align-self: center;
-    margin: auto;
     margin-left: 45px;
     gap: 50px;
 }
 
-
- .motto-text {
-    background: linear-gradient(45deg, #FF5733, #30c2ef); 
+.motto-text {
+    background: linear-gradient(45deg, #FF5733, #30c2ef);
     -webkit-background-clip: text;
     color: transparent;
     border-radius: 10px;
     font-size: 2em;
-    justify-content: flex-end;
- }
-
-.motto-image {
-    display: flex;
-    height: 200px;
-    /* margin-bottom: 30px; */
-    padding-left: 10px;
-    border-radius: 35px;
-    /* border: 2px inset rgb(255, 155, 41); */
-} 
+}
 
 .tag-container {
     display: flex;
-    height: 200px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    height: 200px;
     margin: 10px;
     gap: 20px;
-    /* background-color: #c81313; */
-    /* padding: 130px; */
     font-size: 1.5em;
     font-weight: bolder;
-    /* background: linear-gradient(45deg, #FF5733, #30c2ef);  */
-    /* -webkit-background-clip: text; */
     color: rgb(14, 62, 134);
-
-}
-/* Global reset and styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-
-/* Section for the first background image */
+/* Section for images */
 .background-section {
-    max-height: 10px; /* Adjust height as needed */
-    background-image: url('images/first-image.jpg'); /* First background image */
-    background-size: contain; 
-    background-position: center; 
-    /* background-repeat: no-repeat;  */
-    /* padding: 0px 20px;  */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds space between images */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-/* Section for the second background image */
-/* .background-section.second-image {
-    background-image: url('images/second-image.jpg');
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-} */
+/* Images within the section */
+.background-section img {
+    width: 100%;
+    max-width: 300px; /* Restricts the maximum width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures images are covered without stretching */
+    border-radius: 10px; /* Adds rounded corners to images */
+}
 
-.tag-text div{
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .background-section img {
+        max-width: 200px; /* Further reduce size for smaller screens */
+    }
+}
+
+.tag-text div {
     font-size: 45px;
-    /* color: white; */
-    /* display: flex; */
-    /* align-items: center; */
 }
 
 
