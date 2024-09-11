@@ -1,0 +1,196 @@
+
+
+    /* Global reset and styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 500px;
+}
+
+body {
+    /* max-width: 500px; */
+    margin: 0;
+    background-image: url('images/2hearts.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* position: absolute; */
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    position: relative;
+}
+
+/* Header content for logo and text */
+.header-content {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin: auto;
+    margin-left: 20px;
+    
+}
+
+.logo {
+    max-width: 50px;
+    height: auto;
+}
+
+.logo-texts {
+    font-size: 20px;
+    font-weight: bolder;
+    background: linear-gradient(45deg, #c81313, #0a4a55df);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: none; 
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Hidden checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 450px) {
+    .hamburger-menu {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .header-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px; 
+        right: 10px;
+        background-color: transparent;
+        padding: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        gap: 20px;
+        /* z-index: 1; */
+    }
+    
+
+    .menu-toggle:checked + .hamburger-menu + .header-links {
+        display: flex; /* Show links when checked */
+    }
+}
+
+/* Styling for navigation links */
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.90rem;
+}
+
+/* Additional styles */
+.motto {
+    width: 100%;
+    display: flex;
+    position: relative;
+    border-top: 1px dotted rgb(181, 23, 23);
+    height: 230px;
+    background: linear-gradient(45deg, #000000, #000000);
+
+}
+.motto-item {
+    display: flex;
+    align-self: center;
+    margin: auto;
+    margin-left: 45px;
+    gap: 50px;
+}
+
+
+ .motto-text {
+    background: linear-gradient(45deg, #FF5733, #30c2ef); 
+    -webkit-background-clip: text;
+    color: transparent;
+    border-radius: 10px;
+    font-size: 2em;
+    justify-content: flex-end;
+ }
+
+.motto-image {
+    display: flex;
+    height: 200px;
+    /* margin-bottom: 30px; */
+    padding-left: 10px;
+    border-radius: 35px;
+    /* border: 2px inset rgb(255, 155, 41); */
+} 
+
+.tag-container {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    gap: 20px;
+    /* background-color: #c81313; */
+    /* padding: 130px; */
+    font-size: 1.5em;
+    font-weight: bolder;
+    /* background: linear-gradient(45deg, #FF5733, #30c2ef);  */
+    /* -webkit-background-clip: text; */
+    color: rgb(14, 62, 134);
+
+}
+/* Global reset and styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Section for the first background image */
+.background-section {
+    max-height: 10px; /* Adjust height as needed */
+    background-image: url('images/first-image.jpg'); /* First background image */
+    background-size: contain; 
+    background-position: center; 
+    /* background-repeat: no-repeat;  */
+    /* padding: 0px 20px;  */
+}
+
+/* Section for the second background image */
+/* .background-section.second-image {
+    background-image: url('images/second-image.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+.tag-text div{
+    font-size: 45px;
+    /* color: white; */
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+
+
